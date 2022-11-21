@@ -42,7 +42,7 @@ Hầu hết chỉ một giá trị với một điều kiện tương ứng đư
 + Ngày và giờ: Sử dụng cú pháp chuẩn của giá trị * của thẻ opens_hours = *. Nếu giá trị đó bao gồm dấu chấm phẩy (";"), thì điều kiện đó phải được bao bởi dấu ngoặc tròn (ngoặc đơn), ví dụ: (Fr 06: 00-24: 00; Tu-Fr 00: 00-24: 00; Sa 00: 00-13: 00), Mo-Fr 07: 00-19: 00.
 + Các từ viết tắt: Mo(thứ 2), Tu(thứ 3), We(thứ 4), Th(thứ 5), Fr(thứ 6), Sa(thứ 7), Su(chủ nhật).
 + Chưa hỗ trợ đọc nhiều điều kiện trên 1 tag (ví dụ: `access:conditional=no @ (17:00-20:00);yes @ (06:00-08:00)`)
-+ Chưa hỗ trợ value là yes. Mếu bạn muốn chỉ cho phép đi trong 1 khoảng thời gian, bạn phải cấm các khoảng thời gian không được đi.
++ Chưa hỗ trợ value là `yes`. Mếu bạn muốn chỉ cho phép đi trong 1 khoảng thời gian, bạn phải cấm các khoảng thời gian không được đi.
 + Điều kiện có thể gồm thứ hoặc không. Nếu không có trường thứ thì mặc định điều kiện thời gian sẽ được áp dụng cho tất cả các ngày. Ví dụ `motor_vehicle:conditional=no @ (18:30-07:30)`
 + Điều kiện có thể có thời gian hoặc không. Nếu không có trường thời gian thì được thời gian cấm sẽ được cho là cả ngày. Ví dụ `	motorcycle:conditional=no @ (Sa,Su)`
 + Có thể áp dụng chung 1 điều kiện thời gian cho các thứ liên tiếp trong tuần bằng cách thêm dấu `-` ở giữa 2 thứ bắt đầu và kết thúc. Ví dụ `access:conditional=no @ (Mo-Fr 07:00-10:00)`. Có thể bỏ điều kiện thời gian để coi như cấm tất cả các thứ. 
